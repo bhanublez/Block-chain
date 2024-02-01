@@ -1,0 +1,9 @@
+#Block Chain Notes
+ hackathon
+//Lesson 1
+What is block chain?
+Bitcoin is block chain toshi nakanami
+it is digital gold. Etherium Decnetailized Agreements.
+Smart contracts. 
+Smart contract are set of instructions executed in a decentralized way without th need for a centrailized.
+ 1:32
