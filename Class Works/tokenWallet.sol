@@ -21,7 +21,7 @@ contract TokenWallet{
         _;
     }
 
-    event BalanceUpdated(address indexed user, uint balance); // We used to update the balance of the user to the particular address
+    event BalanceUpdated(address indexed user, uint balance); // log maintain karata hai
 
     function updateBalance(uint balance) public {
         balances[msg.sender] = balance;
