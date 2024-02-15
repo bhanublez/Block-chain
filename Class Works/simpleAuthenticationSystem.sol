@@ -27,15 +27,17 @@ contract SimpleAuth{
     }
 
     function registerUsingAddress(address add) public onlyOwner {
+        require(registered[add] == false, "Already registered Hai Tu!!");
         registered[add] = true;
     }
 
     function checkRegistered() public view returns(bool) {
+        require(registered[msg.sender]==true, "Who? You are not registered!!!");
         return registered[msg.sender];
     }
 
     function checkRegisteredAtAddresss(address add) public view onlyOwner returns(bool) {
-        require(registered[add] == true, "Who? You are not registered!!!y");
+        require(registered[add] == true, "Who? You are not registered!!!");
         return registered[add];
     }
 

@@ -26,8 +26,7 @@ contract GradesRegistry{
         _;
     }
 
-    event GradeUpdated(uint256 indexed studentID, uint256 grade); // We used to update the balance of the user to the particular address
-
+    event GradeUpdated(uint256 indexed studentID, uint256 grade); // log maintain karata hai
     function updateGrade(uint256 studentID, uint256 grade) public {
         grades[studentID] = Grade(studentID, grade);
         emit GradeUpdated(studentID, grade);
