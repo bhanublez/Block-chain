@@ -30,6 +30,7 @@ contract A {
     }
 }
 
+
 contract B is
     A // B - Dertived Contract, A - Parent Contract
 {
