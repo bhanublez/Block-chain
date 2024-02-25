@@ -29,7 +29,8 @@ contract Lottery {
             uint256(//typecasting
                 keccak256(//keccak256 is used to hash the data
                     abi.encode(//abi.encode is used to convert the data into bytes
-                        block.difficulty,//difficulty of the current block
+                        // block.difficulty,//difficulty of the current block
+                        blockhash(block.number - 1),//hash of the current block
                         block.timestamp,// timestamp of the current block
                         participants.length //length of the participants array
                     )
